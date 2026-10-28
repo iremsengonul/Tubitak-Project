@@ -67,25 +67,24 @@ Doğrusal hâli: $\min z$ öyle ki $w_i \, d_{ij} \, y_{ij} \leq z, \;\; \forall
 ## Kullanılan Teknolojiler
 
 - **Python**
-- **PuLP** ve **Pyomo** (açık kaynak optimizasyon kütüphaneleri)
-- **Gurobi** (akademik lisans ile çözücü)
+- **PuLP** (optimizasyon modelleme) ve **Gurobi** (çözücü)
+- **pandas**, **NumPy**, **Matplotlib** (veri işleme ve görselleştirme)
+- **OSRM** (ilçe ve hastaneler arası gerçek yol mesafeleri; erişilemezse kuş uçuşu × 1,20 kullanılır)
 
 ## Kurulum ve Çalıştırma
 
-Model, `minimax_toplam_enerji.ipynb` adlı Jupyter Notebook dosyasında yer almaktadır.
+Model, `soguk_zincir.ipynb` dosyasında yer almaktadır. GitHub'da dosyaya tıklayarak kodu ve sonuçları görüntüleyebilirsiniz.
 
-**GitHub üzerinde görüntülemek için:** Dosyaya tıklamanız yeterlidir. Kod ve çıktılar doğrudan görüntülenir.
+**Çalıştırmak için en kolay yol (Google Colab):** colab.research.google.com → **GitHub** sekmesi → bu repo'yu seçin → **Çalışma zamanı → Tümünü çalıştır**. İlk hücre gerekli kütüphaneleri otomatik kurar.
 
 **Bilgisayarda çalıştırmak için:**
 
 ```bash
-pip install pulp pyomo gurobipy notebook
-jupyter notebook "Sadece toplam enerji.ipynb"
+pip install pulp gurobipy pandas numpy matplotlib requests notebook
+jupyter notebook soguk_zincir.ipynb
 ```
 
-Notebook tarayıcıda açıldıktan sonra hücreleri sırayla çalıştırın (üst menüden **Run → Run All Cells**).
-
-> Gurobi'yi tam kapasiteyle kullanmak için akademik lisans gereklidir: https://www.gurobi.com/academia/
+> Model boyutu Gurobi'nin ücretsiz sürümünün sınırları içindedir. Daha büyük senaryolar için akademik lisans gerekir: https://www.gurobi.com/academia/
 
 ## Proje Takvimi
 
