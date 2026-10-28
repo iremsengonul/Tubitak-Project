@@ -47,7 +47,7 @@ Model, **Minimax** yaklaşımıyla afet sonrası en uzak talep noktasına olan m
 |---|---|
 | $x_j \in \{0,1\}$ | Depo $j$ açılırsa 1 |
 | $y_{ij} \in \{0,1\}$ | Talep noktası $i$, depo $j$'den hizmet alırsa 1 |
-| $z \geq 0$ | En kötü durumdaki ağırlıklı mesafe (maksimum değer) |
+| $t \geq 0$ | En kötü durumdaki ağırlıklı mesafe (maksimum değer) |
 
 ### Amaç Fonksiyonu
 
