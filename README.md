@@ -64,6 +64,14 @@ Doğrusal hâli: $\min z$ öyle ki $w_i \, d_{ij} \, y_{ij} \leq z, \;\; \forall
 5. Toplam enerji tüketimi sınırı: $\sum_{j \in J} e_j \, x_j \leq E_{max}$
 6. İkili değişkenler: $x_j, y_{ij} \in \{0,1\}$
 
+### Çözüm Yaklaşımı (3 Aşama)
+
+1. **En az depo sayısı:** Tüm kısıtları sağlayan en az depo sayısı $p^*$ bulunur.
+2. **Minimax:** $p^*$ depo ile en kötü durumdaki ağırlıklı mesafe $t^*$ en aza indirilir.
+3. **Toplam mesafe:** $t^*$ kötüleştirilmeden, talep ağırlıklı toplam mesafe en aza indirilir.
+
+**Veri:** İzmir'in 27 ilçesi talep noktası, her ilçedeki bir hastane depo adayıdır. Talep, 2025 ilçe nüfusunun %9'u olarak alınmıştır. Depo kapasitesi ve enerji tüketimi, hastane zemin alanına sığabilecek ilaç dolabı sayısından hesaplanır (dolap başına 700 paket, 5,28 kWh/gün). Taşıma hızı 50 km/sa, en uzun ulaşım süresi 3 saattir.
+
 ## Kullanılan Teknolojiler
 
 - **Python**
