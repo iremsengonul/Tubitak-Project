@@ -72,7 +72,7 @@ Doğrusal hâli: $\min z$ öyle ki $w_i \, d_{ij} \, y_{ij} \leq z, \;\; \forall
 
 ## Kurulum ve Çalıştırma
 
-Model, `Sadece toplam enerji.ipynb` adlı Jupyter Notebook dosyasında yer almaktadır.
+Model, `minimax_toplam_enerji.ipynb` adlı Jupyter Notebook dosyasında yer almaktadır.
 
 **GitHub üzerinde görüntülemek için:** Dosyaya tıklamanız yeterlidir. Kod ve çıktılar doğrudan görüntülenir.
 
